@@ -4,7 +4,8 @@
   "description": "using postgress and orm to build a todo app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -b && node ./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,10 @@
   "dependencies": {
     "@prisma/client": "^6.15.0",
     "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "prisma": "^6.15.0",
     "typescript": "^5.9.2",
     "zod": "^4.1.5"
